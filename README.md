@@ -9,21 +9,20 @@ Stripped version of automate-missing-lists for only Folio searches but with bett
 	- If this fails, ensure pip is installed. Run the python installer again and click **Modify**. Here you can see if pip is installed before running again.
 
 ## Setup
-- Paste barcodes into barcodes.txt. It is intended to read them as a column, pasted directly from a spreadsheet. Do not include a heading column title. 
+- Paste barcodes into barcodes.txt. It is intended to read them as a column, pasted directly from a spreadsheet. **Do not include a heading column title.**
 
 ## Operation Instructions
 **Requirements**: Working log in to SCU  [FOLIO](https://scu.folio.indexdata.com/)
 
 Setup:
 1. Log into FOLIO using Google Chrome (Layout may differ if not on Chrome)
-2. Navigate into automate-missing-lists/FOLIO folder
-3. Right click when in Folio and pick *Inspect Element*. The keyboard shortcut for this is F12 on most systems.
-4. The inspect window will have a bar at the very top with "Elements", "Console", "Sources", "Network", etc.
-5. Navigate to "Application" tab
-6. Refresh the page
-7. Locate 'folioAccessToken' and copy the VALUE field
-8. **For any trouble locating the access token, refer to *config_token_location.png***
-9. Paste the value into **FOLIO_TOKEN.txt** and save the file.
+2. Right click when in Folio and pick *Inspect Element*. The keyboard shortcut for this is F12 on most systems.
+3. The inspect window will have a bar at the very top with "Elements", "Console", "Sources", "Network", etc.
+4. Navigate to "Application" tab and open Cookies
+5. Refresh the page
+6. Locate 'folioAccessToken' and copy the VALUE field
+7. **For any trouble locating the access token, refer to *config_token_location.png***
+8. Paste the value into **FOLIO_TOKEN.txt** and save the file.
 
 Usage:
 1. Run **run_folio.bat** --- *If this fails, ensure FOLIO_TOKEN.txt has the full token and is saved.*
